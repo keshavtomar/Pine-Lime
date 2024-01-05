@@ -1,14 +1,50 @@
-body{
-    display: flex;
-    justify-content: center;
-    background: rgb(148,214,226);
-    background: radial-gradient(circle, rgba(148,214,226,1) 41%, rgba(199,216,219,1) 66%, rgba(199,216,219,1) 75%);
+@font-face {
+  font-family: 'f1'; /* Replace with your desired font family name */
+  src: url('fonts/your-font-file.woff2') format('f11'),
+       url('fonts/your-font-file.woff') format('f12');
 }
 
-.form{
-    width: 80vw;
-    margin-top: 20px;
-    border: 2px solid rgba(247, 247, 203, 0.133);
-    background: #fff;
-    border-radius: 10px;
+body {
+  display: flex;
+  justify-content: center;
+  background: rgb(148, 214, 226);
+  background: radial-gradient(
+    circle,
+    rgba(148, 214, 226, 1) 41%,
+    rgba(199, 216, 219, 1) 66%,
+    rgba(199, 216, 219, 1) 75%
+  );
+}
+
+.form {
+  width: 80vw;
+  margin-top: 20px;
+  border: 2px solid rgba(247, 247, 203, 0.133);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.map-page {
+  width: auto;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  background-color: whitesmoke;
 }

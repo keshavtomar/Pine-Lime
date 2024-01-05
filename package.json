@@ -1,0 +1,11 @@
+{
+  "name": "pinenlime-assignment",
+  "version": "1.0.0",
+  "description": "Made a 2 page application for redirecting to a location in real time using open Weather api for coordinates of cities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

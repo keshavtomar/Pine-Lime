@@ -1,8 +1,15 @@
 @font-face {
-  font-family: 'f1'; /* Replace with your desired font family name */
-  src: url('fonts/your-font-file.woff2') format('f11'),
-       url('fonts/your-font-file.woff') format('f12');
+  font-family: 'f1'; 
+  src: url('fonts/AvenirLight.otf') format('f11'),
+       url('fonts/AvenirLight.otf') format('f12');
 }
+
+@font-face {
+  font-family: 'futura'; 
+  src: url('fonts/futura-light/FuturaLight.ttf') format('fut1'),
+       url('fonts/futura-light/FuturaSCTOTLight.ttf') format('fut2');
+}
+
 
 body {
   display: flex;
@@ -37,6 +44,7 @@ body {
 p{
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
 }
 
 .details{
@@ -47,4 +55,43 @@ p{
   padding: 10px;
   text-align: center;
   background-color: whitesmoke;
+}
+
+.col{
+  max-width: 210px;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'f1', sans-serif; 
+}
+
+h1,h2 {
+  font-family: 'f1', sans-serif; 
+}
+
+
+.desc{
+ font-family: 'futura', sans-serif;
+ font-size: 0.65em;
+ font-weight: bold;
+}
+
+.city{
+  font-family: 'futura', sans-serif;
+  font-size:small;
+  font-weight: bold;
+}
+
+.cord{
+  font-family: 'futura', sans-serif;
+  font-size: medium;
+  font-style: italic;
+  font-weight: 50;
+}
+
+#currentDate{
+  font-family: 'futura', sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
 }

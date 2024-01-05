@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Map Page</title>
+  <title>Pine & Lime Assignment</title>
 
   <!-- Include Leaflet CSS and JS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -25,11 +25,10 @@
     <div id="map-container"></div>
     <div class='map-details'>
     <div class="row">
-       <div class="col col-6">{{description}}</div>
+       <div class="col col-6 text-break desc">{{description}}</div>
        <div class="col col-6 details">
-        <p>{{city}}</p>
-        <p>Latitude: {{latitude}}</p>
-        <p>Longitude: {{longitude}}</p>
+        <p class="city">{{city}}</p>
+        <p class="cord">{{latitude}}°N / {{longitude}} °E</p>
         <p id="currentDate"></p>
        </div>
     </div>

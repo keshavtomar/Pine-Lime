@@ -17,10 +17,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/map", (req, res) => {
-  const latitude = req.query.latitude;
-  const longitude = req.query.longitude;
+  const latitudeString = req.query.latitude;
+  const longitudeString = req.query.longitude;
   const description = req.query.description;
   const city = req.query.city;
+
+  let latitude = parseFloat(latitudeString).toFixed(3);
+  let longitude = parseFloat(longitudeString).toFixed(3);
 
   // Render the map.mustache template with the coordinates
   res.render("map", { latitude, longitude, description, city });
@@ -85,9 +88,15 @@ app.post("/submit", async (req, res) => {
     }
 
     //check if latitude and longitude are within range
-    if(latitude < -90 || latitude > 90 || longitude < -180 || longitude > 180){
+    if (
+      latitude < -90 ||
+      latitude > 90 ||
+      longitude < -180 ||
+      longitude > 180
+    ) {
       res.render("form", {
-        error: "Latitude must be between -90 and 90 and longitude must be between -180 and 180.",
+        error:
+          "Latitude must be between -90 and 90 and longitude must be between -180 and 180.",
       });
       return;
     }
@@ -97,7 +106,9 @@ app.post("/submit", async (req, res) => {
   // ...
 
   // Redirect to the /map endpoint with coordinates as URL parameters
-  res.redirect(`/map?latitude=${latitude}&longitude=${longitude}&description=${description}&city=${city}`);
+  res.redirect(
+    `/map?latitude=${latitude}&longitude=${longitude}&description=${description}&city=${city}`
+  );
 });
 
 // Start the server

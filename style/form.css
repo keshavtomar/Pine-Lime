@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    background: rgb(148,214,226);
+    background: radial-gradient(circle, rgba(148,214,226,1) 41%, rgba(199,216,219,1) 66%, rgba(199,216,219,1) 75%);
+}
+
+.form{
+    width: 80vw;
+    margin-top: 20px;
+    border: 2px solid rgba(247, 247, 203, 0.133);
+    background: #fff;
+    border-radius: 10px;
+}
